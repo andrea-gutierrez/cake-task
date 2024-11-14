@@ -14,10 +14,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body>
+        <body className="m-4">
         <Providers>
-            <h1 className="font-extrabold justify-center">Cake</h1>
-            {children}
+            <h1 className="font-extrabold text-4xl text-center">Cake</h1>
+            <main className="m-2">
+                {children}
+            </main>
         </Providers>
         </body>
         </html>

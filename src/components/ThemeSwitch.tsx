@@ -3,7 +3,7 @@
 import {useTheme} from "next-themes";
 import {useEffect, useState} from "react";
 import {Theme} from "@/utils/enums/theme.enum";
-import {cn, Switch} from "@nextui-org/react";
+import {Switch} from "@nextui-org/react";
 
 export default function ThemeSwitch() {
     const [mounted, setMounted] = useState(false);

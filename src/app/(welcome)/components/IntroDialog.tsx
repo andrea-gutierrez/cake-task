@@ -8,7 +8,9 @@ export function IntroDialog() {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
     return <>
-        <Button onPress={onOpen}>Choose Your Style</Button>
+        <div className="flex items-center justify-center w-full m-3">
+            <Button color="primary" onPress={onOpen}>Choose Your Style</Button>
+        </div>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange} hideCloseButton={true}>
             <ModalContent>
                 {(onClose) => (
