@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import {Providers} from "@/components/providers/Providers";
-import ThemeSwitch from "@/components/ThemeSwitch";
 
 export const metadata: Metadata = {
     title: "Dev Interview Task",
@@ -17,7 +16,7 @@ export default function RootLayout({
         <html lang="en">
         <body>
         <Providers>
-            <ThemeSwitch></ThemeSwitch>
+            <h1 className="font-extrabold justify-center">Cake</h1>
             {children}
         </Providers>
         </body>
