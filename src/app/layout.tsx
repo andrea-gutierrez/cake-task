@@ -14,12 +14,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className="m-4">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </head>
+        <body>
         <Providers>
-            <h1 className="font-extrabold text-4xl text-center">Cake</h1>
-            <main className="m-2">
-                {children}
-            </main>
+            {children}
         </Providers>
         </body>
         </html>
